@@ -1,0 +1,43 @@
+   {% extends "core/base.html" %}
+
+            <title>PUEBLOS</title>
+        {% load static%}
+      <!--contenido-->
+  
+    <body>
+         
+        {% block content %}   
+        <main class="contenedorPrincipal">
+            
+           <section>
+            <h1><b> PEQUEÑOS PUEBLOS PERDIDOS</b></h1><br><br>
+                    <p>En la actualidad, el turismo rural se ha convertido en un escape de la ciudad. Estancias para 
+                    pasar un día de campo, pequeños pueblos perdidos con mucha historia, parajes 
+                    casi olvidados, son algunas de las muchisimas opciones que hay a pocos kilómetros de la Capital.</p><br>
+                  
+      
+              <div class="grid-container">
+                    {% for project in projects %}
+                        <div class="grid-item3">
+                        
+                                <img src="{{project.imagenes.url}}" alt="">
+                            </figure>
+                            <div class="descripcion">
+                            <h2>{{project.title}}</h2>
+                            <p>{{project.description}}</p>
+                            <a href="{{project.link}}" target="_blank">Leer más</a>
+                            </div>
+                 
+                       
+            </div>
+            
+               
+                   
+                  
+               
+  
+        {% endfor %}
+    {% endblock %}
+           </section>  
+    </main> 
+</body>

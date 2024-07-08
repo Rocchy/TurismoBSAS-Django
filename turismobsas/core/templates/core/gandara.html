@@ -1,0 +1,85 @@
+ {% extends "core/base.html" %}
+
+            <title>Gándara</title>
+        {% load static%}
+      <!--contenido-->
+
+    {% block content %}     
+   
+
+
+<body>
+        <main>
+            <section> 
+                <div class="grid-item">   
+                    <h1 class="animate__animated animate__bounce">GANDARA</h1>
+                </div>
+                    <p>Gándara es un paraje rural del partido de Chascomús, dentro de la Provincia de Buenos Aires, Argentina.
+
+                    Se encuentra a la vera de la Autovía 2 que conecta la ciudad de Buenos Aires con Mar del Plata.
+                
+                    Gándara fue un paraje especial durante varias décadas debido a la existencia de la planta láctea del mismo nombre. La producción, el ingreso y egreso de productos por diferentes vías y el movimiento de personas hacían del paraje un lugar productivo y próspero.
+                
+                    Decenas de familias llegaron a convivir y cientos de personas llegaban a diario para trabajar, comerciar o visitar el lugar. Con el cese de la producción de la fábrica y el cierre se vio reducida la actividad social y económica de Gándara y disminuyó la población ya que vivían operarios, empleados y personas que comercializaban con estos.
+                
+                    La falta del trabajo y de posibilidades de comerciar han producido el abandono del lugar de sus pobladores en búsqueda de nuevas oportunidades quedando la estación, la Escuela Número 21 “25 de mayo” y algunas viviendas en funcionamiento.
+                
+                    Actualmente se estima que en la zona habitan 45 personas, luego de todo lo que sucedió en dicho pueblo la zona quedó muy abandonada por sus habitantes, esto provocó que esta misma se viera abandonada en ciertas partes de la localidad.</p>
+            </section>
+    
+            <div class="grid-item">
+                <h2>Imagenes del pueblo</h2>
+            </div>
+            <div class="grid-contenido">
+                
+                <div class="grid-item3">
+                    <article class="imagenes1">
+                        <figure>
+                            <img src="{% static 'core/imagenes/gandaraEstacion.jpg' %}" alt="Estación de trenes">
+                        </figure>
+                        <div class="descripcion">
+                            <h3>Estación de trenes</h3>
+                            <p>Se puede llegar en tren Línea Roca, ramal Alejandro Korn- Chascomús</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="grid-item3">
+                    <article class="imagenes1">   
+                        <figure>
+                            <img src="{% static 'core/imagenes/gandaraEstacion2.jpg' %}" alt="Estación de trenes">
+                        </figure>
+                        <div class="descripcion">
+                            <h3>Estación de trenes</h3>
+                            <p>Gándara es una estación ferroviaria ubicada en la localidad homónima, en el partido de Chascomús.</p>
+                        </div>
+                    </article>
+                </div>
+               
+                <div class="grid-item3">       
+                    <article class="imagenes1">
+                        <figure>
+                            <img src="{% static 'core/imagenes/gandaraYogurt.jpeg' %}" alt="Yogurt marca Gándara">
+                        </figure>
+                        <div class="descripcion">
+                            <h3>Productos marca Gándar</h3>
+                            <p>La producción, el ingreso y egreso de productos por diferentes vías y el movimiento de personas hacían del paraje un lugar productivo y próspero.</p>
+                        </div>
+                    </article>  
+                </div> 
+                
+            </div>
+            </main>
+            <aside id="lateralvideo">
+                <div class="grid-container2">
+                    <div class="grid-item2">
+                        <section>
+                            <h3>Como llegar...</h3>
+                            <a href="https://www.argentina.gob.ar/transporte/trenes-argentinos/horarios-tarifas-y-recorridos/areametropolitana/linearoca/alejandro-korn-chascomus" target="_blank"><span class="icon">&#10004;</span>Trenes argentinos</a><br><br>
+                            <a href="https://www.google.com.ar/maps/place/Gandara,+Provincia+de+Buenos+Aires/@-35.45203,-58.0898874,15z/data=!3m1!4b1!4m6!3m5!1s0x959809ff0e0b6b3d:0x12caca95941c82e6!8m2!3d-35.4499295!4d-58.0948296!16s%2Fg%2F121vl67n?entry=ttu" target="_blank"><span class="icon">&#10004;</span>Google Maps</a>
+                        </section>
+                    </div>
+                </div>
+            </aside>
+            </body>
+         {% endblock %}

@@ -1,0 +1,60 @@
+ <!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>{% block title %}{% endblock %}</title> 
+ 
+          {% load static%}
+        <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static '/core/css/style.css' %}">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="icon" href="{% static 'core/imagenes/favicon.ico' %}">
+        
+    </head>
+ <body>
+  
+        <div class="contenedorPrincipal">
+            <header class="encabezado">
+                <div>
+                    <img src="{% static 'core/imagenes/turismo-rural-argentina.jpg' %}" alt="logo">
+                </div>
+                <div class="site-branding">
+                    <h1>TURISMO RURAL EN LA PROVINCIA DE BUENOS AIRES</h1>
+                       
+                </div>
+                <nav class="menu-simple-menu">
+                    <ul>
+                    <li><a href="{% url 'home'%}">Inicio</a></li>
+                        <li><a href="{% url 'quienessomos'%}">Quiénes somos?</a></li>
+                         <li><a href="{% url 'pueblo'%}">Pequeños Pueblos</a></li>
+                        <li><a href="https://weather.com/es-AR/tiempo/hoy/l/ARBA0009:1:AR" target="_blank">Estado del tiempo</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+      
+    <!--contenido-->
+    {% block content %}   
+          
+   
+    {% endblock %}
+    {% if request.path == '/' %} 
+            <footer>
+                <div id="iconos">
+                    <a href="https://www.youtube.com/channel/UCbeyJn3aUhUjU5mTZ_BoDfw" target="_blank"><i class="fa-brands fa-youtube" style="color: rgb(245, 35, 35);"></i></a> 
+                    <a href="https://twitter.com/TurismoPBA" target="_blank"><i class="fa-brands fa-x-twitter" style="color: black;"></i></a>
+                    <a href="https://www.facebook.com/TurismoPBA/" target="_blank"><i class="fa-brands fa-facebook" style="color: rgb(3, 29, 101); " ></i></a>
+                    
+                </div>
+                <p>Página creada por alumnos de Codo a Codo- Comisión Número 24152</p>
+                <p>Derechos Reservados &copy; 2024</p>
+            </footer>
+            <script src="https://kit.fontawesome.com/a0628113ef.js" crossorigin="anonymous"></script>      
+
+ {% endif %}
+     </body>
+ </html>
+    

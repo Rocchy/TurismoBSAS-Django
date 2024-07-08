@@ -1,0 +1,113 @@
+ {% extends "core/base.html" %}
+ 
+  {% load static%}
+
+ 
+        <title>Pueblos de Buenos Aires</title>
+  
+    <!--contenido-->
+            {% block content %} 
+              <body>
+   
+        
+        <main>          
+            <h1 class="animate__animated animate__bounce">PUEBLOS DE BUENOS AIRES</h1><br>
+            <section>
+                <h2>Un recorrido por pequeños pueblos,pueblitos y parajes de la provincia de Buenos Aires </h2><br><br>
+                <div>
+                    <p>En la actualidad, el turismo rural se ha convertido en un escape de la ciudad. Estancias para pasar un día de campo, pequeños pueblos perdidos con mucha historia, parajes casi olvidados, son algunas de las muchisimas opciones que hay a pocos kilómetros de la Capital.</p><br>
+                    <p>Sabido es que Buenos Aires es una de las ciudades más fascinantes de Latinoamérica, llena de cultura, opciones gastronómicas, vida nocturna y maravillas arquitectónicas, lo que hace que sea un destino muy buscado por viajeros de todo el mundo y cada vez más nómadas digitales. </p><br>
+                    <p>Pero también es lógico que una metrópoli tan grande resulte abrumadora, y después de un tiempo en ella sientas ganas de tomarte un respiro. </p><br>
+                    <p>Al ser un país tan grande, los principales destinos turísticos de Argentina se encuentran muy lejos de Buenos Aires y distanciados entre sí, por lo que no es muy práctico hacer una escapada desde la capital a estos lugares. 
+                        Pero aunque muchos no los conozcan, hay una gran cantidad de pueblos de Buenos Aires muy interesantes para visitar a una distancia relativamente cercana de la gran ciudad, ya sea como una excursión por el día o para pasar un tiempo rodeado de tranquilidad</p>
+                </div>
+                 <div class="grid">
+                    <div id="grid-item">
+                        <div class="imagenMp">
+                            <a href="https://www.buenosaires.tur.ar/" target="_blank"><img src="static/core/imagenes/MapaTurismoBA.jpeg" width="200" alt="MapaTurismoBA"></a> <br>
+                        </div>
+                    </div>
+                </div>  
+            </section><br><br>
+                <div class="grid-item">
+                    <h2>Algunos pueblos para conocer</h2>
+                </div>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <figure>   
+                            <img src="{% static 'core/imagenes/gandaraEstacion.jpg' %}" alt="gandara">
+                        </figure>
+                        <a href="{% url 'gandara'%}">GANDARA</a>
+                    </div>
+                    <div class="grid-item">
+                        <figure>   
+                            <img src="{% static 'core/imagenes/uribeEstacion.jpg' %}" alt="uribelarrea">
+                        </figure>
+                        <a href="{% url 'urube'%}">URIBELARREA</a>
+                    </div>
+                    <div class="grid-item">
+                        <figure>   
+                            <img src="{% static 'core/imagenes/ramalloEstacion.jpeg' %}" alt="ramallo">
+                        </figure>
+                        <a href="{% url 'villaramallo'%}">RAMALLO</a>
+                    </div>
+                      <div class="grid-item">
+                        <figure>   
+                            <img src="{% static 'core/imagenes/carlosKenestacion.jpeg' %}" alt="carlosken">
+                        </figure>
+                        <a href="{% url 'carlosken'%}">CARLOS KEN</a>
+                    </div> 
+                    <div class="grid-item">
+                        <figure>   
+                            <img src="{% static 'core/imagenes/manzanaresestacion.jpeg' %}" alt="manzares">
+                        </figure>
+                        <a href="{% url 'manzanares'%}">MANZANARES</a>
+                    </div>
+                     <div class="grid-item">
+                        <figure>   
+                            <img src="{% static 'core/imagenes/delCarrilestacion.jpg' %}" alt="delcarril">
+                        </figure>
+                        <a href="{% url 'delcarril'%}">DEL CARRIL</a>
+                    </div>
+        </main>       
+                
+        <aside id="lateralvideo">
+            <div class="grid-container2">
+                <div class="grid-item2">
+                    <section id="fiestasPopulares">
+                        <div style="text-align: left;">
+                            <form action="https://www.google.com/search" method="get">
+                                <input type="text" name="q" placeholder="Buscar en Google...">
+                                <input type="submit" value="Buscar">
+                            </form>
+                        </div>
+                         <h3>ENLACES IMPORTANTES</h3>
+                         <a href="https://www.buenosaires.tur.ar/fiestaspopulares">Fiestas populares</a>
+                        <a href="https://www.booking.com/city/ar/buenos-aires.es-ar.html" target="_blank">Buscar hoteles en Buenos Aires</a><br><br>
+                        <a href="https://www.argentina.gob.ar/transporte/trenes" target="_blank">Trenes argentinos</a><br><br>
+                        
+                         
+                    </section>
+                    <div class="videosTurismo">
+                            <video src= "static/core/medios/TurisroRural.mp4"  autoplay muted loop controls></video>
+                        </div>
+                    
+                         
+                   
+
+                    
+          
+                    
+                   
+                </div>
+                
+            </div>
+        </aside>
+             <br><br>
+       
+        {% endblock %}   
+    </body>
+    
+           
+    
+   
